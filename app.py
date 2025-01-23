@@ -1,3 +1,8 @@
+
+# 39,76,76,19.96837462,15.57324389,8.135900726000001,69.15759062  -coffee
+# 74,35,40,26.49109635,80.15836264,6.980400905,242.8640342,rice   pigeonpeas    papaya
+# 12,142,203,31.3115978,82.56407013,5.972850837999999,65.01095312,grapes   banana
+
 from flask import Flask,request,render_template
 import numpy as np
 import pandas
@@ -5,7 +10,7 @@ import sklearn
 import pickle
 
 # importing model
-model = pickle.load(open('model.pkl','rb'))
+model = pickle.load(open('crop-model.pkl','rb'))
 sc = pickle.load(open('standscaler.pkl','rb'))
 ms = pickle.load(open('minmaxscaler.pkl','rb'))
 
